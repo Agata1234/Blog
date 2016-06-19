@@ -1,9 +1,15 @@
 ﻿<html>
     <head>
-        <title>Blog</title>
+    <link rel="stylesheet" href="//maxdcn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <title>Blog</title>
+
     </head>
+
     <h1><br>B<br/>l<br/>o<br/>g</b></h1>
     <body>
+
         <div>
             <p><b>Witam na moim blogu!</b></p>
             <p><u>Już działa</u> :)</p>
@@ -12,8 +18,10 @@
     {% for post in posts %}
         <div>
         <p>published: {{ post.published_date }} </p>
-        <h1><a href="">{{ post.title }} </a></h1>>
+        <h1><a href="">{{ post.title }} </a></h1>
         </div>
     {% endfor %}
+
         </body>
+
         </html>
