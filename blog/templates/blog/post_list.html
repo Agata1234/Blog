@@ -9,14 +9,11 @@
             <p><u>Już działa</u> :)</p>
         </div>
 
+    {% for post in posts %}
         <div>
-            <p><b>Witam na moim blogu!</b></p>
-            <p><u>Już działa</u> :)</p>
+        <p>published: {{ post.published_date }} </p>
+        <h1><a href="">{{ post.title }} </a></h1>>
         </div>
-
-        <div>
-            <p><b>Witam na moim blogu!</b></p>
-            <p><u>Już działa</u> :)</p>
-        </div>
-    </body>
-</html>
+    {% endfor %}
+        </body>
+        </html>
